@@ -97,7 +97,7 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
 
-.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+.oldie { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
 
 @media only screen and (min-width: 35em) {
