@@ -149,7 +149,7 @@ $if_use_web_fonts[[
 @font-face {
   font-family: 'Sputnik Header Web Font';
   font-style: normal;
-  font-weight: bold;  
+  font-weight: normal; /* Upload a bold font, if bold is desired. */
   src: url('$font_base_url{}sputnik/fonts/header.woff') format('woff');
 }]]
 
