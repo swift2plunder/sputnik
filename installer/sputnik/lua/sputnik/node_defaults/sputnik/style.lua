@@ -20,6 +20,7 @@ NODE.css_config = [[
 BOLD_COLOR_1 = "#1B8B9A" -- a bold color used for the larger elements
 BOLD_COLOR_2 = "#093D59" -- a bold color used for the smaller elements
 TEXT_BG_COLOR = "#FFFEEF"  -- background for the main text
+BODY_BG_COLOR = config.CSS_BODY_BG_COLOR or "gray" -- main page background
 BRIGHT_LIGHT_TEXT_COLOR = "white" -- for text on dark bg that should stand ot
 DULLER_LIGHT_TEXT_COLOR = "#DDDDDD" -- for text that should stand out less
 INACTIVE_MENU_COLOR = "#133D49"
@@ -153,7 +154,7 @@ $if_use_web_fonts[[
 }]]
 
 body {
- background-color: gray;
+ background-color: $BODY_BG_COLOR;
  font-family: Verdana, Tahoma, Helvetica, Arial, "sans-serif";
  font-size: 11pt;
 }
@@ -330,6 +331,9 @@ h3 {
 h4 {
  font-size: 107%;
  font-weight: bold;
+}
+h1,h2,h3,h4,h5,h6 {
+ font-family: $if_use_web_fonts[['Sputnik Header Web Font',]] 'Arial', sans-serif;
 }
 
 blockquote {
