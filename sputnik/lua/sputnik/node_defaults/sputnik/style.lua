@@ -332,6 +332,9 @@ h4 {
  font-size: 107%;
  font-weight: bold;
 }
+h1,h2,h3,h4,h5,h6 {
+ font-family: $if_use_web_fonts[['Sputnik Header Web Font',]] 'Arial', sans-serif;
+}
 
 blockquote {
  border-left: 2px solid #cccccc;
