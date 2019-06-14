@@ -20,6 +20,7 @@ NODE.css_config = [[
 BOLD_COLOR_1 = config.CSS_BOLD_COLOR_1 or "#1B8B9A" -- a bold color used for the larger elements
 BOLD_COLOR_2 = config.CSS_BOLD_COLOR_2 or "#093D59" -- a bold color used for the smaller elements
 TEXT_BG_COLOR = config.CSS_TEXT_BG_COLOR or "#FFFEEF"  -- background for the main text
+BODY_BG_COLOR = config.CSS_BODY_BG_COLOR or "gray" -- main page background
 BRIGHT_LIGHT_TEXT_COLOR = config.CSS_BRIGHT_LIGHT_TEXT_COLOR or "white" -- for text on dark bg that should stand ot
 DULLER_LIGHT_TEXT_COLOR = config.CSS_DULLER_LIGHT_TEXT_COLOR or "#DDDDDD" -- for text that should stand out less
 INACTIVE_MENU_COLOR = config.CSS_INACTIVE_MENU_COLOR or "#133D49"
@@ -97,7 +98,7 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
 
-.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+.oldie { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
 
 @media only screen and (min-width: 35em) {
@@ -148,12 +149,12 @@ $if_use_web_fonts[[
 @font-face {
   font-family: 'Sputnik Header Web Font';
   font-style: normal;
-  font-weight: bold;  
+  font-weight: normal; /* Upload a bold font, if bold is desired. */
   src: url('$font_base_url{}sputnik/fonts/header.woff') format('woff');
 }]]
 
 body {
- background-color: gray;
+ background-color: $BODY_BG_COLOR;
  font-family: Verdana, Tahoma, Helvetica, Arial, "sans-serif";
  font-size: 11pt;
 }
@@ -330,6 +331,9 @@ h3 {
 h4 {
  font-size: 107%;
  font-weight: bold;
+}
+h1,h2,h3,h4,h5,h6 {
+ font-family: $if_use_web_fonts[['Sputnik Header Web Font',]] 'Arial', sans-serif;
 }
 
 blockquote {
