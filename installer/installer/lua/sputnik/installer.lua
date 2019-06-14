@@ -1,7 +1,7 @@
 module(..., package.seeall)
 
 require"lfs"
-require"cosmo"
+cosmo=require"cosmo"
 
 REQUIRE_LUAROCKS = [[pcall(require, "luarocks.require")]]
 
