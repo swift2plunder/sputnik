@@ -223,7 +223,7 @@ function Sputnik:initialize_permissions()
    -- Some additional groups for actions, to make it easier to set permissions
    -- for related actions.
    groups.edit_and_save = {"save", "edit", "preview"}
-   groups.show = {"show", "show_content", "cancel"}
+   groups.show = {"show", "show_content", "cancel", "json"}
    groups.history_and_diff = {"history", "diff"}
    groups.show_etc = {"show", "show_content", "cancel", "history", "diff"}
 end

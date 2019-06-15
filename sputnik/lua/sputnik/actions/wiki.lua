@@ -11,6 +11,7 @@ require("coxpcall")
 require("cosmo")
 require("versium.util")
 require("saci.sandbox")
+json = require("cjson.safe")
 
 local util = require("sputnik.util")
 local html_forms = require("sputnik.util.html_forms")
@@ -937,6 +938,13 @@ end
 -----------------------------------------------------------------------------
 function actions.raw(node, request, sputnik)
    return node.data or "No source available.", "text/plain"
+end
+
+-----------------------------------------------------------------------------
+-- Shows raw content of the node encoded text/json 
+-----------------------------------------------------------------------------
+function actions.json(node, request, sputnik)
+   return json.encode(node.raw_values.content), "application/json"
 end
 
 -----------------------------------------------------------------------------

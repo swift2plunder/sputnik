@@ -73,6 +73,7 @@ preview         = "wiki.preview"
 preview_content = "wiki.preview_content"
 cancel          = "wiki.cancel"
 reload          = "wiki.reload"
+json            = "wiki.json"
 ]],
 markup_module = "markdown",
 templates     = "sputnik/templates",
