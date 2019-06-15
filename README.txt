@@ -1,8 +1,16 @@
-WARNING: ABANDONED SOFTWARE, YMMV
-=================================
+There may be updates!
 
-Sputnik was a fun project but it has not been maintained since 2012 and
-none of the primary contributors have plans to maintain it in the future.
+I'll be hosting a fork of Sputnik at https://gitlab.com/swift2plunder/sputnik
+You can find my social media at https://banana.dog/@yaaps
+I do not have a public facing email address
+Many thanks to Yuri Takhteyev for his help when I was hanger-on
+with this project 2009-2012
+
+I plan to implement Argon2 password hashing and JSON equivalents to raw and raw_content
+and to prepare a release prior to integrating my ActivityPub project
+
+Chris Babcock, a.k.a. Swift2plunder, Kol Panic, AceNovo
+
 
 INTRODUCTION
 ============
@@ -17,8 +25,6 @@ See attached LICENSE.txt for more information.
 
 (c) 2007-2012 Yuri Takhteyev (most of the code)
 Some of the code is (c) other authors. (See LICENSE.txt for details.)
-
-Contact: <qaramazov@gmail.com>
 
 
 INSTALLATION
