@@ -197,35 +197,22 @@ permissions=[[
 ]]
 }
 
-NODE.html_main      = [==[<!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+NODE.html_main      = [==[<!DOCTYPE html>
 <head>
 $head
 </head>
 <body>
 $body
-
-  <script src="$js_base_url{}sputnik/scripts.js"></script>
-  <script>window.jQuery || document.write('<script src="$js_base_url{}sputnik/scripts.js"><\/script>')</script>
-  $do_javascript_links[[<script src="$href"></script>
-  ]]
-  $do_javascript_snippets[=[
-   <script>/* <![CDATA[ */ $snippet /* ]]> */</script>
-  ]=]
 </body>
 </html>
 ]==]
 
 NODE.html_head      = [=[
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="keywords" content="$html_meta_keywords"/>
   <meta name="description" content="$html_meta_description"/>
   <title>$site_title: $title</title>
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="$css_base_url{}sputnik/style.css" media="all"/>
   $do_css_links[[<link type="text/css" rel="stylesheet" href="$href" media="$media"/>
 ]]$do_css_snippets[[
@@ -235,7 +222,7 @@ NODE.html_head      = [=[
   <link rel="alternate" type="application/rss+xml" title="_(RECENT_EDITS_TO_NODE)" $node_rss_link/>
   $if_no_index[[<meta name="ROBOTS" content="NOINDEX, NOFOLLOW"/>]]
   
-  <script src="$js_base_url{}sputnik/early_scripts.js"></script>
+  <!--<script src="$js_base_url{}sputnik/early_scripts.js"></script>-->
 ]=]
   
 
